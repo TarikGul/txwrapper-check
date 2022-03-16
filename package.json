@@ -1,0 +1,28 @@
+{
+  "name": "txwrapper-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./lib/index.js",
+    "start-call": "tsc && node ./lib/call.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@acala-network/type-definitions": "^2.2.1",
+    "@polkadot/api": "^7.12.1",
+    "@substrate/api-sidecar": "^11.3.13",
+    "@substrate/dev": "^0.5.7",
+    "@substrate/txwrapper-core": "^1.5.7",
+    "@substrate/txwrapper-polkadot": "^1.5.7",
+    "@substrate/txwrapper-registry": "^1.5.7",
+    "moonbeam-types-bundle": "^1.2.4",
+    "typescript": "^4.4.3"
+  },
+  "resolutions": {
+    "@polkadot/api": "^7.12.1"
+  },
+  "packageManager": "yarn@3.2.0"
+}
