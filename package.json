@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./lib/index.js",
-    "start-call": "tsc && node ./lib/call.js"
+    "build": "substrate-exec-rimraf lib/ && substrate-exec-tsc", 
+    "start": "yarn build && node ./lib/txwrapperCheck.js",
+    "start-call": "yarn build && node ./lib/pjsTemplate.js"
   },
   "keywords": [],
   "author": "",

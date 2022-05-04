@@ -4,10 +4,13 @@ import {
     construct,
     decode,
     deriveAddress,
-    getRegistry,
     methods,
     PolkadotSS58Format
 } from '@substrate/txwrapper-polkadot';
+
+import {
+    getRegistry
+} from '@substrate/txwrapper-registry';
 
 import { KeyringPair } from '@polkadot/keyring/types';
 import { EXTRINSIC_VERSION } from '@polkadot/types/extrinsic/v4/Extrinsic';
@@ -110,7 +113,7 @@ async function main(): Promise<void> {
     // if desired.
     const unsigned = methods.balances.transferKeepAlive(
         {
-            value: '1000000000',
+            value: '100000000000',
             dest: '5HBhDLa6ZUmRjmNKSgT2QPVZgaYqKYYKBPKSZswsDMpUtzGF', // Bob
         },
         {
