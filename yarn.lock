@@ -1000,9 +1000,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/apps-config@npm:0.115.1":
-  version: 0.115.1
-  resolution: "@polkadot/apps-config@npm:0.115.1"
+"@polkadot/apps-config@npm:0.115.2":
+  version: 0.115.2
+  resolution: "@polkadot/apps-config@npm:0.115.2"
   dependencies:
     "@acala-network/type-definitions": ^4.1.1
     "@babel/runtime": ^7.17.9
@@ -1037,7 +1037,7 @@ __metadata:
     moonbeam-types-bundle: 2.0.4
     pontem-types-bundle: 1.0.15
     rxjs: ^7.5.5
-  checksum: 6dfa22a588b14f0c0fc149060f773f28361f9ad19a7d41a63e11238cf835e47e1d7e99e256c89cfbfc57f0c3ee2b1c1da6ed24b2cdfb12f9c31f7567d24cf6ff
+  checksum: 7589a8c0c661fc5b4739d988179759d949a89da463776fb7e0e46579a9e3fab2f4bfc9bcc951b10a735b13cbe7ea9e542c96f40df5c6d0c796793dc5ce6f8fd5
   languageName: node
   linkType: hard
 
@@ -2011,43 +2011,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-core@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@substrate/txwrapper-core@npm:3.0.3"
+"@substrate/txwrapper-core@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@substrate/txwrapper-core@npm:3.0.4"
   dependencies:
-    "@polkadot/api": 8.4.2
+    "@polkadot/api": 8.5.1
     memoizee: 0.4.15
-  checksum: 76f3efbdf1def0f72af8e1808f7aa2688597b2e30f75120d05b0c8c9842d5b481c1c9cf1756d44c8691b5d544e7d40f2e0927df0f47084d55d4978310d13ce57
+  checksum: 36d74d3a9da087af2910f6529dfd8c22fc51aef41fc10063c416f2ca7bef42c2e938334440938032f14fd53134e451721a3a787550378b1d576b1da1910a84d8
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-polkadot@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@substrate/txwrapper-polkadot@npm:3.0.3"
+"@substrate/txwrapper-polkadot@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@substrate/txwrapper-polkadot@npm:3.0.4"
   dependencies:
-    "@substrate/txwrapper-core": ^3.0.3
-    "@substrate/txwrapper-substrate": ^3.0.3
-  checksum: 92e99a06ff90f65fca080b634abd6ee0b6fa4ca2ddc97c3d357355773b79190e687605ac8ad3001f7aeb80201998efe78e1e52263c8435eef06fbd83b54742c3
+    "@substrate/txwrapper-core": ^3.0.4
+    "@substrate/txwrapper-substrate": ^3.0.4
+  checksum: 05f4dca9dfdf9c15375ec6c153355242f690ff0f1134aef9fd6ca38750a9ae8ee6e4c14bf5b8e667b10ea97cf65dc106b199dff8bb344cdb0455553922a4c4b5
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-registry@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@substrate/txwrapper-registry@npm:3.0.3"
+"@substrate/txwrapper-registry@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@substrate/txwrapper-registry@npm:3.0.4"
   dependencies:
-    "@polkadot/apps-config": 0.115.1
+    "@polkadot/apps-config": 0.115.2
     "@polkadot/networks": 9.2.1
-    "@substrate/txwrapper-core": ^3.0.3
-  checksum: 69e6fc73ae2816ce6ce1102e5226d5ac21beaae98d057a881721dd9eb5171b3a0b793e3f2eebc413930bcec9a25ae4a72b90ec736fc6ee24f1e887295f69569b
+    "@substrate/txwrapper-core": ^3.0.4
+  checksum: ccee7cc45c9556a0621b9549743db63c4eb8196d6fb3e1f314b2c77a158046200acf41b4b86c5dc45e1046853ea9b3082ac708ca5c467c87dd80b18f8b65408a
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-substrate@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@substrate/txwrapper-substrate@npm:3.0.3"
+"@substrate/txwrapper-substrate@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@substrate/txwrapper-substrate@npm:3.0.4"
   dependencies:
-    "@substrate/txwrapper-core": ^3.0.3
-  checksum: 92918c5f177616043c3890bbbf8dd75191875fdbbf80b3d3a7bd3beaf2e67012d7af6f2439a3bb3601e1cc2ede7930cea8bdd77316bc2abc38b3b090f44b5cb4
+    "@substrate/txwrapper-core": ^3.0.4
+  checksum: a0a3e6cd06356e80ca6365ff39f5cf6aa72c3f792522f416618719af9eecd91c9536ddeea25d4cc7501fc38e5b9faa4d6effcdba5fe4bb8969d01f237fdb78ef
   languageName: node
   linkType: hard
 
@@ -6395,8 +6395,8 @@ __metadata:
   dependencies:
     "@polkadot/api": 8.4.2
     "@substrate/dev": ^0.6.1
-    "@substrate/txwrapper-polkadot": ^3.0.3
-    "@substrate/txwrapper-registry": ^3.0.3
+    "@substrate/txwrapper-polkadot": ^3.0.4
+    "@substrate/txwrapper-registry": ^3.0.4
     typescript: ^4.6.4
   languageName: unknown
   linkType: soft
