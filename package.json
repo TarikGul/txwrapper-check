@@ -13,8 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@polkadot/api": "8.4.2",
-    "@substrate/txwrapper-polkadot": "^3.0.3",
-    "@substrate/txwrapper-registry": "^3.0.3",
+    "@substrate/txwrapper-polkadot": "^3.0.4",
+    "@substrate/txwrapper-registry": "^3.0.4",
     "typescript": "^4.6.4"
   },
   "devDependencies": {
