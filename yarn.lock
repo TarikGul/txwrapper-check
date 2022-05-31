@@ -377,12 +377,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.9.6":
-  version: 7.17.9
-  resolution: "@babel/runtime@npm:7.17.9"
+"@babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.9.6":
+  version: 7.18.3
+  resolution: "@babel/runtime@npm:7.18.3"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 4d56bdb82890f386d5a57c40ef985a0ed7f0a78f789377a2d0c3e8826819e0f7f16ba0fe906d9b2241c5f7ca56630ef0653f5bb99f03771f7b87ff8af4bf5fe3
+  checksum: db8526226aa02cfa35a5a7ac1a34b5f303c62a1f000c7db48cb06c6290e616483e5036ab3c4e7a84d0f3be6d4e2148d5fe5cec9564bf955f505c3e764b83d7f1
   languageName: node
   linkType: hard
 
@@ -1139,7 +1139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/networks@npm:9.2.1, @polkadot/networks@npm:^9.2.1":
+"@polkadot/networks@npm:9.2.1":
   version: 9.2.1
   resolution: "@polkadot/networks@npm:9.2.1"
   dependencies:
@@ -1147,6 +1147,17 @@ __metadata:
     "@polkadot/util": 9.2.1
     "@substrate/ss58-registry": ^1.18.0
   checksum: 606d4deaa11cbffc755a7e53b911b72a0457312d0dec0c984364e68a1986fc614a4c02d8bf27ef5bb25077325e963f024d156dc47ef3068d82783b28ce0dc7b8
+  languageName: node
+  linkType: hard
+
+"@polkadot/networks@npm:9.3.1, @polkadot/networks@npm:^9.2.1":
+  version: 9.3.1
+  resolution: "@polkadot/networks@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@polkadot/util": 9.3.1
+    "@substrate/ss58-registry": ^1.20.0
+  checksum: b7760bfbcec4f8e101c2043c7deb99ba9035fff00e9f0d95a997b2907535494b4da864cb5c70ccbbffddca518041dc169915a8fc5e07a257b850bfa2af398a0e
   languageName: node
   linkType: hard
 
@@ -1510,7 +1521,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/util@npm:9.2.1, @polkadot/util@npm:^9.2.1":
+"@polkadot/util@npm:9.2.1":
   version: 9.2.1
   resolution: "@polkadot/util@npm:9.2.1"
   dependencies:
@@ -1523,6 +1534,22 @@ __metadata:
     bn.js: ^5.2.0
     ip-regex: ^4.3.0
   checksum: 1a1f50e74ae5cd39e2e9e6a7c926370688653cb092cdc2ac1e573e1e09113f792d64af02c85d4bc056c1dcf955b3de9f0db0dcb2115c97e7511b4e2bef9daddd
+  languageName: node
+  linkType: hard
+
+"@polkadot/util@npm:9.3.1, @polkadot/util@npm:^9.2.1":
+  version: 9.3.1
+  resolution: "@polkadot/util@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@polkadot/x-bigint": 9.3.1
+    "@polkadot/x-global": 9.3.1
+    "@polkadot/x-textdecoder": 9.3.1
+    "@polkadot/x-textencoder": 9.3.1
+    "@types/bn.js": ^5.1.0
+    bn.js: ^5.2.1
+    ip-regex: ^4.3.0
+  checksum: 96134abe009704f07f4b81bb9cd759082629568e7558805593459241cf55802cbf6bd5c17a2b3f1eb684777e610b07439530b8646260c05407ba18acfd90b2ab
   languageName: node
   linkType: hard
 
@@ -1694,6 +1721,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polkadot/x-bigint@npm:9.3.1":
+  version: 9.3.1
+  resolution: "@polkadot/x-bigint@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@polkadot/x-global": 9.3.1
+  checksum: cbfc99ba149734f71bbde7f35e9ba4e1edb4ded8e1f73ec154fd59ea7c1c8189b2cb3b3ee014d6a99766555dcde30d7a269c25b4ecdfb687f0c667bbdf57d1d7
+  languageName: node
+  linkType: hard
+
 "@polkadot/x-fetch@npm:^9.2.1":
   version: 9.2.1
   resolution: "@polkadot/x-fetch@npm:9.2.1"
@@ -1733,12 +1770,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/x-global@npm:9.2.1, @polkadot/x-global@npm:^9.2.1":
+"@polkadot/x-global@npm:9.2.1":
   version: 9.2.1
   resolution: "@polkadot/x-global@npm:9.2.1"
   dependencies:
     "@babel/runtime": ^7.17.9
   checksum: 54c4cce0557276e2664ae4829be9ca346eccd069543d7a84c000974458c146f8eda9af8bc3849ada65e26f7fd70f49b23026d551f239056af6235ac13e2679b4
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-global@npm:9.3.1, @polkadot/x-global@npm:^9.2.1":
+  version: 9.3.1
+  resolution: "@polkadot/x-global@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+  checksum: 7cdeea5440842ead42777ed21c599faa1baaaeedf1b93e518002a4cc891aa1e051eaf3b0c964b948ca143e31a17ca7b4362b3f98e5f80c969bdfbde4954cc6fd
   languageName: node
   linkType: hard
 
@@ -1832,6 +1878,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polkadot/x-textdecoder@npm:9.3.1":
+  version: 9.3.1
+  resolution: "@polkadot/x-textdecoder@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@polkadot/x-global": 9.3.1
+  checksum: 707f10a91999ae1ba18146309ce3dfc5a283b9b691ee86a31a0a513796cc953db4233b20360c9c01141d335284bfcafd13ead37cb80fa67c14082a321a076261
+  languageName: node
+  linkType: hard
+
 "@polkadot/x-textencoder@npm:6.11.1":
   version: 6.11.1
   resolution: "@polkadot/x-textencoder@npm:6.11.1"
@@ -1869,6 +1925,16 @@ __metadata:
     "@babel/runtime": ^7.17.9
     "@polkadot/x-global": 9.2.1
   checksum: 9f2690a4b4cb9c02a9626b24580556349d85650e54e04ed4a4a7fa75afa7a89a209e649851f2fffb38c31c3e62515fd17a190ebb84ae6872dd2a4b6f0d2ce279
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-textencoder@npm:9.3.1":
+  version: 9.3.1
+  resolution: "@polkadot/x-textencoder@npm:9.3.1"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@polkadot/x-global": 9.3.1
+  checksum: 1ad4988fecd22d8b2a23f76ff3f0e7f3b1a73705addbbd9a4ce897c2ee05a458663f8edcd5b8f1069273d9ecdca4217466880685996b0bebb0a6de95d62c81ca
   languageName: node
   linkType: hard
 
@@ -2004,50 +2070,50 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@substrate/ss58-registry@npm:^1.17.0, @substrate/ss58-registry@npm:^1.18.0":
-  version: 1.18.0
-  resolution: "@substrate/ss58-registry@npm:1.18.0"
-  checksum: 0d7ed0a741f7574e9225727b50988726b0a04fb552f8899763681d23d0dfaaf01a7ccee477855540a38109fc792e8b8db39b5e79768e4877d90077494dc15795
+"@substrate/ss58-registry@npm:^1.17.0, @substrate/ss58-registry@npm:^1.18.0, @substrate/ss58-registry@npm:^1.20.0":
+  version: 1.20.0
+  resolution: "@substrate/ss58-registry@npm:1.20.0"
+  checksum: 4155a8fbd7c663354b2f0ae654421da397f0f5af01c8e4b1f5234dd318429c734595c4a90edb98e1cd3b2d0e727f26c57bcf557d47f9ce9a15c481f498f592cc
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-core@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@substrate/txwrapper-core@npm:3.0.4"
+"@substrate/txwrapper-core@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@substrate/txwrapper-core@npm:3.1.0"
   dependencies:
-    "@polkadot/api": 8.5.1
+    "@polkadot/api": 8.6.2
     memoizee: 0.4.15
-  checksum: 36d74d3a9da087af2910f6529dfd8c22fc51aef41fc10063c416f2ca7bef42c2e938334440938032f14fd53134e451721a3a787550378b1d576b1da1910a84d8
+  checksum: 5065b3c48289379819a5e0339beae88b62693ac5d25ccce3be8f8b37dc369de7db4e83148920898896f6c21ae25b7d5d5e60e6b997a4b17d01a1ca4c327bb075
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-polkadot@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@substrate/txwrapper-polkadot@npm:3.0.4"
+"@substrate/txwrapper-polkadot@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@substrate/txwrapper-polkadot@npm:3.1.0"
   dependencies:
-    "@substrate/txwrapper-core": ^3.0.4
-    "@substrate/txwrapper-substrate": ^3.0.4
-  checksum: 05f4dca9dfdf9c15375ec6c153355242f690ff0f1134aef9fd6ca38750a9ae8ee6e4c14bf5b8e667b10ea97cf65dc106b199dff8bb344cdb0455553922a4c4b5
+    "@substrate/txwrapper-core": ^3.1.0
+    "@substrate/txwrapper-substrate": ^3.1.0
+  checksum: 42b186a62d33853dadfadf91317ce194b4c0e66b66810664bdf0d903d38aced9c4ed380393e757e5f622d9bb67b94d16dc91609dff66e57daaddb7579bb3b9f0
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-registry@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@substrate/txwrapper-registry@npm:3.0.4"
+"@substrate/txwrapper-registry@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@substrate/txwrapper-registry@npm:3.1.0"
   dependencies:
     "@polkadot/apps-config": 0.115.2
-    "@polkadot/networks": 9.2.1
-    "@substrate/txwrapper-core": ^3.0.4
-  checksum: ccee7cc45c9556a0621b9549743db63c4eb8196d6fb3e1f314b2c77a158046200acf41b4b86c5dc45e1046853ea9b3082ac708ca5c467c87dd80b18f8b65408a
+    "@polkadot/networks": 9.3.1
+    "@substrate/txwrapper-core": ^3.1.0
+  checksum: 83e11ce34dc9059b31f0a9469fbc0f9548d4757df8a5d0366deb2e2983d5dbd68fbdf8bee0ca2655fcc20286ce79b56192981b5abbe84eef5101170e1f54398e
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-substrate@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@substrate/txwrapper-substrate@npm:3.0.4"
+"@substrate/txwrapper-substrate@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@substrate/txwrapper-substrate@npm:3.1.0"
   dependencies:
-    "@substrate/txwrapper-core": ^3.0.4
-  checksum: a0a3e6cd06356e80ca6365ff39f5cf6aa72c3f792522f416618719af9eecd91c9536ddeea25d4cc7501fc38e5b9faa4d6effcdba5fe4bb8969d01f237fdb78ef
+    "@substrate/txwrapper-core": ^3.1.0
+  checksum: e2c1887d483bea20d9b82af7d4379b5727fbf5e4e82e6b4d7969ea0b7d6adb7ecec6cab9ad7ce2024cb178c76b29b6b359d775a221c94b83d41e753223854eb3
   languageName: node
   linkType: hard
 
@@ -2693,10 +2759,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bn.js@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "bn.js@npm:5.2.0"
-  checksum: 6117170393200f68b35a061ecbf55d01dd989302e7b3c798a3012354fa638d124f0b2f79e63f77be5556be80322a09c40339eda6413ba7468524c0b6d4b4cb7a
+"bn.js@npm:^5.2.0, bn.js@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "bn.js@npm:5.2.1"
+  checksum: 3dd8c8d38055fedfa95c1d5fc3c99f8dd547b36287b37768db0abab3c239711f88ff58d18d155dd8ad902b0b0cee973747b7ae20ea12a09473272b0201c9edd3
   languageName: node
   linkType: hard
 
@@ -6395,8 +6461,8 @@ __metadata:
   dependencies:
     "@polkadot/api": 8.4.2
     "@substrate/dev": ^0.6.1
-    "@substrate/txwrapper-polkadot": ^3.0.4
-    "@substrate/txwrapper-registry": ^3.0.4
+    "@substrate/txwrapper-polkadot": ^3.1.0
+    "@substrate/txwrapper-registry": ^3.1.0
     typescript: ^4.6.4
   languageName: unknown
   linkType: soft
