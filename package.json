@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@polkadot/api": "8.4.2",
+    "@polkadot/api": "8.6.2",
     "@substrate/txwrapper-polkadot": "^3.1.0",
     "@substrate/txwrapper-registry": "^3.1.0",
     "typescript": "^4.6.4"
@@ -21,7 +21,7 @@
     "@substrate/dev": "^0.6.1"
   },
   "resolutions": {
-    "@polkadot/api": "8.4.2"
+    "@polkadot/api": "8.6.2"
   },
   "packageManager": "yarn@3.2.0"
 }
