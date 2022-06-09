@@ -5,12 +5,9 @@ import {
     decode,
     deriveAddress,
     methods,
-    PolkadotSS58Format
-} from '@substrate/txwrapper-polkadot';
-
-import {
+    PolkadotSS58Format,
     getRegistry
-} from '@substrate/txwrapper-registry';
+} from '@substrate/txwrapper-polkadot';
 
 import { BlockNumber } from '@polkadot/types/interfaces';
 import { rpcToLocalNode, signWith } from './util';
