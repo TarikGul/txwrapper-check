@@ -12,9 +12,6 @@ import {
 import { BlockNumber } from '@polkadot/types/interfaces';
 import { rpcToLocalNode, signWith } from './util';
 
-
-
-
 export async function polkadotExample(): Promise<void> {
     // Wait for the promise to resolve async WASM
     await cryptoWaitReady();
