@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@substrate/txwrapper-polkadot": "^3.1.4",
+    "@substrate/txwrapper-polkadot": "^3.1.5",
     "typescript": "^4.6.4"
   },
   "devDependencies": {
-    "@substrate/dev": "^0.6.2"
+    "@substrate/dev": "^0.6.3"
   },
   "packageManager": "yarn@3.2.1"
 }
