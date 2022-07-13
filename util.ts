@@ -1,7 +1,16 @@
 import { KeyringPair } from '@polkadot/keyring/types';
 import { EXTRINSIC_VERSION } from '@polkadot/types/extrinsic/v4/Extrinsic';
 import { createMetadata, OptionsWithMeta } from '@substrate/txwrapper-polkadot';
-import fetch from 'node-fetch';
+import { fetch } from '@polkadot/x-fetch'
+
+interface IValue {
+    error: {
+        code: number;
+        message: string;
+        data: string;
+    };
+    result: unknown;
+}
 
 /**
  * Send a JSONRPC request to the node at http://localhost:9933.
@@ -26,7 +35,8 @@ import fetch from 'node-fetch';
       method: 'POST',
   })
       .then((response) => response.json())
-      .then(({ error, result }) => {
+      .then((value) => {
+          const { error, result } = (value as IValue);
           if (error) {
               throw new Error(
                   `${error.code} ${error.message}: ${JSON.stringify(error.data)}`
