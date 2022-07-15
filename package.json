@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "substrate-exec-rimraf lib/ && substrate-exec-tsc",
-    "start": "yarn build && node ./lib/txwrapperCheck.js",
-    "start-call": "yarn build && node ./lib/pjsTemplate.js"
+    "start": "yarn build && node ./lib/txwrapperCheck.js"
   },
   "keywords": [],
   "author": "",
