@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@substrate/txwrapper-polkadot": "^3.2.1",
+    "@substrate/txwrapper-polkadot": "^4.0.0",
     "typescript": "^4.7.4"
   },
   "devDependencies": {
