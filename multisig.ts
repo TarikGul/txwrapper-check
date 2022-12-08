@@ -336,7 +336,7 @@
        otherSignatories: otherSignatoriesSortedExAlice,
        maybeTimepoint: null,
        callHash: callTxHashMulti,
-       maxWeight: '640000000',
+       maxWeight: { refTime:'640000000', proofSize: 0 },
      },
      {
        address: deriveAddress(
@@ -505,7 +505,7 @@
        },
        call: unsignedTXMultiEncodedMethod,
        storeCall: false,
-       maxWeight: '640000000',
+       maxWeight: { refTime: '640000000', proofSize: 0 },
      },
      {
        address: deriveAddress(
