@@ -1289,33 +1289,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-core@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@substrate/txwrapper-core@npm:4.0.3"
+"@substrate/txwrapper-core@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@substrate/txwrapper-core@npm:4.1.0"
   dependencies:
     "@polkadot/api": 9.10.1
     "@polkadot/keyring": 10.2.1
     memoizee: 0.4.15
-  checksum: 7f274d054e5074dd4e937bae18871a7762ab0c41edba25f257b0acb087907654854ec4fb5900784044c6aadf1af03394188fcc5c6e11aebadcc3b80138ad2d15
+  checksum: 45802cab40381669bff45f88973d89af2cebb2296dd9f60efd6332f79de053ecb536cb8957fc1f9e9dc2635b1d74af1a23d1fb4ee6e9c9ece40adb1d77d217a9
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-polkadot@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@substrate/txwrapper-polkadot@npm:4.0.3"
+"@substrate/txwrapper-polkadot@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@substrate/txwrapper-polkadot@npm:4.1.0"
   dependencies:
-    "@substrate/txwrapper-core": ^4.0.3
-    "@substrate/txwrapper-substrate": ^4.0.3
-  checksum: 8936c25689121562b3a7fa62371fed5d4b571a35e43012df872003eeaf6548d8d24f357001faa0bff3e15ef1454b65673e4c3c03a610c38af3807b7d6a44547f
+    "@substrate/txwrapper-core": ^4.1.0
+    "@substrate/txwrapper-substrate": ^4.1.0
+  checksum: e567334ec3c79350e1b494c5bd63dbe27d754a921a26e82baa034b87d591f13978a7ac7b0fed736fec0e80633ee2f69ef4cab127ec7f1750e5dec98f815ea553
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-substrate@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@substrate/txwrapper-substrate@npm:4.0.3"
+"@substrate/txwrapper-substrate@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@substrate/txwrapper-substrate@npm:4.1.0"
   dependencies:
-    "@substrate/txwrapper-core": ^4.0.3
-  checksum: 4c456184bb202e12842b51b3d10f1e2e4f0461f1eab8c2694c6e6a47ac4376defe20d1107e8a3af0c96ac81b805b2c2e15202d910af9de2afc52757e0704afab
+    "@substrate/txwrapper-core": ^4.1.0
+  checksum: fca0259cf0cec5cf6ca70e2b9500430d7bf53b2cf76b4c5aa3601a4994aca99b92dad0a88ca3285d0140b35d9f1ee26585702b5a05a56eb3b7b64ba09fe3df6c
   languageName: node
   linkType: hard
 
@@ -5485,7 +5485,7 @@ __metadata:
   resolution: "txwrapper-check@workspace:."
   dependencies:
     "@substrate/dev": ^0.6.5
-    "@substrate/txwrapper-polkadot": ^4.0.3
+    "@substrate/txwrapper-polkadot": ^4.1.0
     typescript: ^4.8.4
   languageName: unknown
   linkType: soft
