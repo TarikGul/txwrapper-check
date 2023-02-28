@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@substrate/txwrapper-polkadot": "^5.0.0"
+    "@substrate/txwrapper-polkadot": "^5.0.1"
   },
   "devDependencies": {
-    "@substrate/dev": "^0.6.5",
+    "@substrate/dev": "^0.6.6",
     "typescript": "^4.8.4"
   },
   "packageManager": "yarn@3.2.4"
