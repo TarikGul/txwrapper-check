@@ -49,7 +49,7 @@ export async function polkadotExample(): Promise<void> {
     const unsigned = methods.balances.transferKeepAlive(
         {
             value: '100000000000',
-            dest: '5HBhDLa6ZUmRjmNKSgT2QPVZgaYqKYYKBPKSZswsDMpUtzGF', // Bob
+            dest: {id: '5HBhDLa6ZUmRjmNKSgT2QPVZgaYqKYYKBPKSZswsDMpUtzGF'}, // Bob
         },
         {
             address: deriveAddress(sender.publicKey, PolkadotSS58Format.polkadot),
