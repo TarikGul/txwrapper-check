@@ -44,8 +44,8 @@ export async function polkadotExample(): Promise<void> {
 
     // Create Polkadot's type registry.
     const registry = getRegistry({
-        chainName: 'Polkadot',
-        specName: specName.toString() as 'statemint',
+        chainName: 'asset-hub-westend',
+        specName: specName.toString() as 'statemint', // Just for detail sake
         specVersion: specVersion.toNumber(),
         metadataRpc,
         signedExtensions: ['ChargeAssetTxPayment']
