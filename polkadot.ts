@@ -10,14 +10,23 @@ import {
 } from '@substrate/txwrapper-polkadot';
 
 import { BlockNumber } from '@polkadot/types/interfaces';
-import { rpcToLocalNode, signWith } from './util';
+import { signWith } from './util';
+import { ApiPromise, WsProvider } from '@polkadot/api';
+
+const KEY = ''
 
 export async function polkadotExample(): Promise<void> {
+    const api = await ApiPromise.create({
+        provider: new WsProvider('wss://westend-asset-hub-rpc.polkadot.io')
+    })
+
+    await api.isReady;
+    
     // Wait for the promise to resolve async WASM
     await cryptoWaitReady();
     // Create a new keyring, and add an "Alice" account
     const keyring = new Keyring();
-    const sender = keyring.addFromUri('//Alice', { name: 'Alice' }, 'sr25519');
+    const sender = keyring.addFromMnemonic(KEY, { name: 'Alice' }, 'sr25519');
     console.log(
         "Alice's SS58-Encoded Address:",
         deriveAddress(sender.publicKey, PolkadotSS58Format.polkadot)
@@ -27,20 +36,19 @@ export async function polkadotExample(): Promise<void> {
     // To construct the tx, we need some up-to-date information from the node.
     // `txwrapper` is offline-only, so does not care how you retrieve this info.
     // In this tutorial, we simply send RPC requests to the node.
-    const { block } = await rpcToLocalNode('chain_getBlock');
-    const blockHash = await rpcToLocalNode('chain_getBlockHash');
-    const genesisHash = await rpcToLocalNode('chain_getBlockHash', [0]);
-    const metadataRpc = await rpcToLocalNode('state_getMetadata');
-    const { specVersion, transactionVersion, specName } = await rpcToLocalNode(
-        'state_getRuntimeVersion'
-    );
+    const { block } = await api.rpc.chain.getBlock();
+    const blockHash = await api.rpc.chain.getBlockHash();
+    const genesisHash = await api.rpc.chain.getBlockHash(0);
+    const metadataRpc = (await api.rpc.state.getMetadata()).toHex();
+    const { specVersion, transactionVersion, specName } = await api.rpc.state.getRuntimeVersion();
 
     // Create Polkadot's type registry.
     const registry = getRegistry({
         chainName: 'Polkadot',
-        specName: specName,
-        specVersion: specVersion,
-        metadataRpc: metadataRpc,
+        specName: specName.toString() as 'statemint',
+        specVersion: specVersion.toNumber(),
+        metadataRpc,
+        signedExtensions: ['ChargeAssetTxPayment']
     });
 
     // Now we can create our `balances.transferKeepAlive` unsigned tx. The following
@@ -53,20 +61,20 @@ export async function polkadotExample(): Promise<void> {
         },
         {
             address: deriveAddress(sender.publicKey, PolkadotSS58Format.polkadot),
-            blockHash: blockHash,
+            blockHash: blockHash.toString(),
             blockNumber: (registry
                 .createType('BlockNumber', block.header.number) as BlockNumber)
                 .toNumber(),
             eraPeriod: 64,
-            genesisHash,
+            genesisHash: genesisHash.toString(),
             metadataRpc,
             nonce: 0, // Assuming this is Alice's first tx on the chain
-            specVersion,
+            specVersion: specVersion.toNumber(),
             tip: 0,
-            transactionVersion,
+            transactionVersion: transactionVersion.toNumber(),
         },
         {
-            metadataRpc: metadataRpc,
+            metadataRpc,
             registry,
         }
     );
@@ -116,8 +124,7 @@ export async function polkadotExample(): Promise<void> {
     // Send the tx to the node. Again, since `txwrapper` is offline-only, this
     // operation should be handled externally. Here, we just send a JSONRPC
     // request directly to the node.
-    const actualTxHash = await rpcToLocalNode('author_submitExtrinsic', [tx]);
-    console.log(`Actual Tx Hash: ${actualTxHash}`);
+    await api.rpc.author.submitExtrinsic(tx);
 
     // Decode a signed payload.
     const txInfo = decode(tx, {
