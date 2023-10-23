@@ -898,7 +898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/api@npm:10.10.1, @polkadot/api@npm:^10.9.1":
+"@polkadot/api@npm:10.10.1, @polkadot/api@npm:^10.10.1":
   version: 10.10.1
   resolution: "@polkadot/api@npm:10.10.1"
   dependencies:
@@ -923,7 +923,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/keyring@npm:^12.3.2, @polkadot/keyring@npm:^12.5.1":
+"@polkadot/keyring@npm:^12.5.1":
   version: 12.5.1
   resolution: "@polkadot/keyring@npm:12.5.1"
   dependencies:
@@ -1347,33 +1347,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-core@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@substrate/txwrapper-core@npm:7.1.0"
+"@substrate/txwrapper-core@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "@substrate/txwrapper-core@npm:7.1.1"
   dependencies:
-    "@polkadot/api": ^10.9.1
-    "@polkadot/keyring": ^12.3.2
+    "@polkadot/api": ^10.10.1
+    "@polkadot/keyring": ^12.5.1
     memoizee: 0.4.15
-  checksum: e4494443a5262cf2deaf29615e96975f86f8b66c133e59c5ee7d27d10c396b3a811df73f2b5eb72b1639f49a028d1c169c51949fb8b080816bcbdd57dc327f3f
+  checksum: 1e9ef44885eba2e90d9ed32491db4769a0214a56872e81518750976a10229feb9e43191220f6f440e6c1ba2bdcdcdc8366819870be4d56aa88864562d3c4be42
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-polkadot@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@substrate/txwrapper-polkadot@npm:7.1.0"
+"@substrate/txwrapper-polkadot@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "@substrate/txwrapper-polkadot@npm:7.1.1"
   dependencies:
-    "@substrate/txwrapper-core": ^7.1.0
-    "@substrate/txwrapper-substrate": ^7.1.0
-  checksum: ab187c63c641c2495f7d671e27cdcabd2056933eaca28d60256b7d930fbe663c5705469dcaaffb758498a5783585ccb0d652087648a25c91dd31d2edf373064f
+    "@substrate/txwrapper-core": ^7.1.1
+    "@substrate/txwrapper-substrate": ^7.1.1
+  checksum: 82637811aa30e6179bc02c4855759752ba18d8171148dcae118442b77980fe225dc9995328e6eca79da2c2793f20d5f466766db80edde78d3a13d4b121c8fecc
   languageName: node
   linkType: hard
 
-"@substrate/txwrapper-substrate@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@substrate/txwrapper-substrate@npm:7.1.0"
+"@substrate/txwrapper-substrate@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "@substrate/txwrapper-substrate@npm:7.1.1"
   dependencies:
-    "@substrate/txwrapper-core": ^7.1.0
-  checksum: a886be22ce4c5413188dbc1f4fdee5698103061837589c36b907a43ae0c57da0dfbdce1df5f812fb5da0a92d2793e4d621c3aedbe3eebaad4bb6569c541d7bad
+    "@substrate/txwrapper-core": ^7.1.1
+  checksum: 77b42ebc0907a8a33ae72af166c1f0c7f78f55382a3f9771f55fe0e998ff87387ed7b99ccec00b6dd4037277b7046c592fa89d3682ce5b67b40b9b004a91a981
   languageName: node
   linkType: hard
 
@@ -4995,7 +4995,7 @@ __metadata:
   resolution: "txwrapper-check@workspace:."
   dependencies:
     "@substrate/dev": ^0.7.0
-    "@substrate/txwrapper-polkadot": ^7.1.0
+    "@substrate/txwrapper-polkadot": ^7.1.1
     typescript: ^4.8.4
   languageName: unknown
   linkType: soft
